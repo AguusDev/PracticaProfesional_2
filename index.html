@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="src/img/logo_pag.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/marcas-categorias.css">
+    <link rel="stylesheet" href="src/css/sobre-nosotros.css">
+    <link rel="stylesheet" href="src/css/formulario.css">
+    <link rel="stylesheet" href="src/css/cards-autos.css">
+    <title>AutoCare</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <img class="logo" src="src/img/logo_pag.jpg" alt="">
+        </div>
+        <div class="header-img">
+            <div class="text__content-header">
+                <h1 class="title-header">Landing Page AutoCare</h1>
+                <p class="p-header">
+                    Hola, somos AutoCare concesionario lider en el mercado de automoviles de primera marca, nuestro objetivo es ayudar a conectar a nuestros clientes con el auto de sus sueños..... ¿Que estas esperando?<br> Ponete en contacto con nuestro equipo y comenza hoy a cumplir tus metas ✔✔
+                </p>
+                <a href="#formulario-container" class="btn" id="btn">Quiero + info</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="patro-container" class="patrocinios-container">
+            <img id="chevrolet" src="./src/img/logos/chevrolet.png" alt="" class="patrocinios-item">
+            <img id="citroen" src="./src/img/logos/citroen.png" alt="" class="patrocinios-item">
+            <img id="ford" src="./src/img/logos/ford.png" alt="" class="patrocinios-item">
+            <img id="mercedes" src="./src/img/logos/mercedes.png" alt="" class="patrocinios-item">
+            <img id="vw" src="./src/img/logos/vw.png" alt="" class="patrocinios-item">
+        </div>
+        <div id="autos">
+            <div class="stock-container" id="mercedes-view"></div>
+            <div class="stock-container" id="chevrolet-view"></div>
+            <div class="stock-container" id="citroen-view"></div>
+            <div class="stock-container" id="ford-view"></div>
+            <div class="stock-container" id="vw-view"></div>
+        </div>
+
+        <div id="sobre-nosotros" class="sobre-nosotros">
+            <h2 class="title-sb">Sobre Nosotros</h2>
+            <div class="sb-container">
+                <img class="img-sb" src="./src/img/img_sobre-nosotros.jpg" alt="">
+                <div class="info-sb">
+                    <h3 class="title__info-sb">Mas Informacion</h3>
+                    <p class="p__info-sb">AUTOCARE es una concesionaria de autos seleccionados de gama media y alta, y categoría Premium, todos los vehículos son controlados en nuestros talleres antes de ser ofrecidos a la venta.</p>
+                    <a href="#formulario-container" class="btn" id="btn">+ INFO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="formulario" id="formulario-container">
+            <h2 class="title-form">Formulario de contacto</h2>
+            <div class="form-container">
+                <form class="form">
+                    <h3 class="title__form-int">Contacta con Nosotros</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="inp-nombre" class="inp-nombre" required maxlength="20">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="inp-asunto" class="inp-asunto" required maxlength="50">
+                    <label for="mensaje">Mensaje.. </label>
+                    <textarea name="mensaje" id="inp-mensaje" class="inp-mensaje" maxlength="350" ></textarea>
+                    <div id="alerta-nombre" class="alerta"></div>
+                    <div id="alerta-asunto" class="alerta"></div>
+                    <div id="alerta-mensaje" class="alerta"></div>
+
+                    <button id="btn-enviar" class="btn enviar">ENVIAR</button>
+                </form>
+                <div id="img-form">
+                    <img class="img-form" src="src/img/img_form.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="redes-container">
+                <img class="redes-item" src="./src/img/redes/facebook.png">
+                <img class="redes-item" src="./src/img/redes/twiter.png">
+                <img class="redes-item" src="./src/img/redes/tiktok.png">
+                <img class="redes-item" src="./src/img/redes/instagram.png">
+            </div>
+            <div class="navegacion-footer">
+                <a class="navegacion-item" href="#header">Inicio</a>
+                <a class="navegacion-item" href="#patro-container">Marcas</a>
+                <a class="navegacion-item" href="#autos">Modelos</a>
+                <a class="navegacion-item" href="#formulario-container">Contacto</a>
+                <a class="navegacion-item" href="#sobre-nosotros">Sobre Nosotros</a>
+            </div>
+            <div class="copy-container">
+                <p class="copy-item">©copyright 2023 - Federico Garcia - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/formulario.js"></script>
+    <script src="src/js/mercedes.js"></script>
+    <script src="src/js/chevrolet.js"></script>
+    <script src="src/js/citroen.js"></script>
+    <script src="src/js/ford.js"></script>
+    <script src="src/js/vw.js"></script>
+</body>
+</html>
+
+

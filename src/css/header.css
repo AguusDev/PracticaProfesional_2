@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;500&display=swap');
+
+:root{
+    --blanco:#F5FBEF;
+    --amarillo: #FDCA40;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F1F2EB;
+}
+
+/* Header ---------------*/
+        
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 60px;
+    border-radius: 100%;
+    margin: 5px 0 5px 0;
+    padding: 2px;
+    background-image:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,128,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.header-img{
+    height: 90vh;
+    background-image: url('../img/img_header.jpg');
+    background-size: cover;
+    background-position: center;
+    min-width: 100;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.text__content-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+
+    padding: 0 15px;
+    color: var(--blanco);
+    
+}
+
+.title-header{
+    font-size: 1.8em;
+}
+
+.p-header{
+    font-size: .8em;
+    max-width: 420px;
+}
+
+.btn{
+    text-align: center;
+    text-decoration: none;
+    margin:10px 0 0 0;
+    padding: 10px 0;
+    width: 240px;
+    font-size: .8em;
+    font-weight: 600;
+    border-radius: 7px;
+    border-style: none;
+
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,195,1) 50%, rgba(252,176,69,1) 100%);
+
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.btn:hover{
+    opacity: .7;
+    transform: scale(1.1);
+}
+
+
+
+@media (min-width:560px){
+
+    .text__content-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        padding: 0 30% 0 10%;
+    }
+
+    .title-header{
+        font-size: 40px;
+    }
+
+    .p-header{
+        font-size: 14px;
+    }
+}
+
+
+
+
